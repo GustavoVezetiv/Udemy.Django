@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Despesas</title> <!-- Alterado de Expense List para Lista de Despesas -->
+</head>
+<body>
+    <h1>Lista de Despesas</h1> <!-- Alterado de Expense List para Lista de Despesas -->
+    <ul>
+        {% for despesa in despesas %} <!-- Alterado de expense para despesa -->
+            <li>{{ despesa.nome }}: {{ despesa.valor }} - {{ despesa.categoria }} em {{ despesa.data }}</li> <!-- Alterado para refletir as mudanças -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
